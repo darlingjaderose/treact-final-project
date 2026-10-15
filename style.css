@@ -15,7 +15,7 @@ body {
 
 .row {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -184,26 +184,67 @@ HEADER / ABOUT US ↓
 */
 
 .header__container {
-  padding: 96px 800px;
+  padding: 96px 0;
 }
+
 .header__row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-.header__h3{
-  display: flex;
-  flex-wrap: wrap;
-}
-.img-1{
-  align-items: right;
+  align-items: center;
+  gap: 40px;
 }
 
-.header__email{
-  box-sizing: border-box;
-  border-radius: 8px;
+.header__description {
+  width: 40%;
 }
 
+.header__description h1 {
+  font-size: 48px;
+  line-height: 1.25;
+}
+
+.header__para {
+  margin: 32px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.header__img--wrapper {
+  width: 60%;
+}
+
+.img-1 {
+  display: block;
+  width: 100%;
+}
+
+.header__email {
+  display: flex;
+  padding: 6px;
+  border: 2px solid #e5e7eb;
+  border-radius: 999px;
+}
+
+.header__email input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+}
+
+.header__email .btn {
+  padding: 16px 24px;
+  background: #6415ff;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+}
 
 /* 
 
@@ -219,6 +260,12 @@ FEATURES ↓
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.features__list {
+  list-style: none;
+  display: flex;
+  padding: 20px;
 }
 
 /* 
@@ -330,6 +377,19 @@ MOBILE RESPONSIVENESS ↓
   .nav__list,
   .nav__row > .btn {
     display: none;
+  }
+  .header__row {
+    flex-direction: column;
+  }
+
+  .header__description,
+  .header__img--wrapper {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .header__description {
+    text-align: center;
   }
 }
 
