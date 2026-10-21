@@ -246,6 +246,16 @@ HEADER / ABOUT US ↓
   cursor: pointer;
 }
 
+.header__customers {
+  margin-top: 80px;
+}
+
+.header__customers img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 16px;
+}
+
 /* 
 
 FEATURES ↓
@@ -265,7 +275,25 @@ FEATURES ↓
 .features__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 20px;
+}
+
+.features__list li {
+  width: calc(100% / 3);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.features__list li img {
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.feature__text {
+  flex: 1;
 }
 
 /* 
@@ -274,10 +302,21 @@ QUALITY WORK ↓
 
 */
 
-#quality .row {
+.quality__conatiner {
+  padding: 96px 0;
+}
+
+.quality__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.quality__btn {
+  color: #6415ff;
+  border-radius: 40%;
+  font-size: 28px;
+  justify-content: space-between;
 }
 
 /* 
