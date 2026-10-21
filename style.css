@@ -302,7 +302,7 @@ QUALITY WORK ↓
 
 */
 
-.quality__conatiner {
+.quality__container {
   padding: 96px 0;
 }
 
@@ -310,6 +310,7 @@ QUALITY WORK ↓
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .quality__btn {
@@ -317,6 +318,12 @@ QUALITY WORK ↓
   border-radius: 40%;
   font-size: 28px;
   justify-content: space-between;
+}
+
+.quality__description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* 
@@ -433,7 +440,7 @@ MOBILE RESPONSIVENESS ↓
 }
 
 @media (max-width: 768px) {
-  #quality .row,
+  .quality__row,
   #values .row {
     flex-direction: column-reverse;
   }
