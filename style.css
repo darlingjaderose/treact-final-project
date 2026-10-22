@@ -302,28 +302,33 @@ QUALITY WORK ↓
 
 */
 
-.quality__container {
-  padding: 96px 0;
-}
-
 .quality__row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-}
-
-.quality__btn {
-  color: #6415ff;
-  border-radius: 40%;
-  font-size: 28px;
-  justify-content: space-between;
+  gap: 48px;
 }
 
 .quality__description {
   width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.quality__row > img {
+  width: 50%;
+}
+
+.quality__btn {
+  background-color: #6415ff;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /* 
@@ -336,6 +341,32 @@ STEPS ↓
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.steps__description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.steps__list {
+  list-style: none;
+  counter-reset: step;
+}
+
+.steps__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+  counter-increment: step;
+}
+
+.steps__list li::before {
+  content: counter(step, decimal-leading-zero);
+  font-size: 36px;
+  font-weight: 600;
+  color: #cbd5e0;
 }
 
 /* 
