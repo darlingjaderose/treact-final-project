@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     />
     <script src="script.js"></script>
   </head>
@@ -269,7 +268,7 @@
             <div class="steps__description">
               <p class="purple"><b>STEPS</b></p>
               <h1>Easy to <span class="purple">Get Started</span></h1>
-              <ol>
+              <ol class="steps__list">
                 <li>
                   <div>
                     <h3>Register</h3>
@@ -300,38 +299,87 @@
         </div>
       </section>
       <section id="values">
-        <div class="container">
-          <div class="row">
-            <b><p class="Purple">Values</p></b>
-            <h1>
-              We Always Abide by Our<span class="purple">Principles</span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-              numquam excepturi perspiciatis est eius, inventore, maiores sunt
-              possimus saepe labore ratione repellat odit eum, dolorem id dicta.
-              Illum, dignissimos modi!
-            </p>
-            <h3>Affordable</h3>
-            <p>
-              We promise to offer you the best rate we can - at par with the
-              industry standard.
-            </p>
-            <h3>Professionalism</h3>
-            <p>
-              We assure you that our templates are designed and created by
-              professional designers.
-            </p>
-            <button class="btn">Learn More</button>
+        <div class="values__container">
+          <div class="values__row">
+            <div class="values__description">
+              <b><p class="Purple">Values</p></b>
+              <h1>
+                We Always Abide by Our <span class="purple">Principles</span>
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ducimus numquam excepturi perspiciatis est eius, inventore,
+                maiores sunt possimus saepe labore ratione repellat odit eum,
+                dolorem id dicta. Illum, dignissimos modi!
+              </p>
+              <ul class="values__list">
+                <li>
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <h3>Affordable</h3>
+                  <p>
+                    We promise to offer you the best rate we can - at par with
+                    the industry standard.
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-briefcase"></i>
+                  <h3>Professionalism</h3>
+                  <p>
+                    We assure you that our templates are designed and created by
+                    professional designers.
+                  </p>
+                </li>
+              </ul>
+              <button class="values__btn">Learn More</button>
+            </div>
+            <img
+              class="values__img"
+              src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
+            />
           </div>
-          <img
-            src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
-          />
         </div>
       </section>
       <section id="pricing">
         <div class="container">
-          <div class="row"><!--  -->Enter Pricing Section<!--  --></div>
+          <div class="row">
+            <p><span class="purple">PRICING</span></p>
+            <h1>Reasonable & Flexible <span class="purple">Plans</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero impedit quia numquam accusantium illo excepturi et distinctio totam, voluptate quasi, doloribus fugit deserunt modi repellendus, est esse. Id, doloremque?
+            </p>
+            <div class="plan plan--highlighted">
+              <h2 class="plan__title">Personal</h2>
+              <h3 class="plan__price">$17.99 </h3><p>monthly</p>
+              <ul class="plan__features">For Individuals
+                <li class="plan__features">30 Templates</li>
+                <li class="plan__features"> 7 Landing Pages</li>
+                <li class="plan__features"> 12 Internal Pages</li>
+                <li class="plan__features"> Basic Assistance</li>
+              </ul>
+              <button class="plan__button">Buy Now</button>
+            </div>
+            <div class="plan plan--highlighted">
+              <h2 class="plan__title">Business</h2>
+              <h3 class="plan__price">$37.99 </h3><p>monthly</p>
+              <ul class="plan__features">For Small Businesses
+                <li class="plan__features"> 60 Templates</li>
+                <li class="plan__features"> 15 Landing Pages</li>
+                <li class="plan__features"> 22 Internal Pages</li>
+                <li class="plan__features"> Priority Assistance</li>
+              </ul>
+              <button class="plan__button">Buy Now</button>
+            </div>
+            <div class="plan plan--highlighted">
+              <h2 class="plan__title">Enterprise</h2>
+              <h3 class="plan__price">$57.99 </h3><p>monthly</p>
+              <ul class="plan__features">For Large Companies
+                <li class="plan__features"> 90 Templates</li>
+                <li class="plan__features"> 27 Landing Pages</li>
+                <li class="plan__features"> 37 Internal Pages</li>
+                <li class="plan__features"> Personal Assistance</li>
+              </ul>
+              <button class="plan__button">Buy Now</button>
+            </div>
+          </div>
         </div>
       </section>
       <section id="testimonials">
