@@ -448,11 +448,31 @@ PRICING ↓
   min-width: 0;
 }
 
+.plans {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.plan {
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.plan__personal,
+.plan__business,
+.plan__enterprise {
+  width: 100%;
+  margin: 0;
+  padding: 40px 25px;
+  border-radius: 12px;
+}
+
 .plan__personal {
   background-color: white;
-  width: 280 px;
-  margin: 0 auto;
-  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
@@ -460,9 +480,6 @@ PRICING ↓
 
 .plan__business {
   background-color: rgb(5, 5, 198);
-  width: 280 px;
-  margin: 0 auto;
-  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
@@ -470,12 +487,33 @@ PRICING ↓
 
 .plan__enterprise {
   background-color: white;
-  width: 280 px;
-  margin: 0 auto;
-  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+}
+
+.plan__personal,
+.plan__enterprise {
+  position: relative;
+  overflow: hidden;
+}
+
+.plan__personal::before,
+.plan__enterprise::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+
+.plan__personal::before {
+  background: linear-gradient(to right, #38b2ac, #81e6d9);
+}
+
+.plan__enterprise::before {
+  background: linear-gradient(to right, #f56565, #feb2b2);
 }
 
 .plan:hover {
@@ -488,7 +526,7 @@ PRICING ↓
 
 .plan__title {
   color: #333;
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -499,13 +537,13 @@ PRICING ↓
 }
 
 .plan__price {
-  font-size: 28px;
+  font-size: 46px;
   color: #4337de;
   margin-bottom: 15px;
 }
 
 .plan__price--business {
-  font-size: 28px;
+  font-size: 46px;
   color: white;
   margin-bottom: 15px;
 }
@@ -526,12 +564,24 @@ PRICING ↓
   color: #555;
 }
 
+.plan__features--business {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plan__feature--business {
+  margin: 8px 0;
+  color: white;
+  font: white;
+}
+
 .plan__button--personal {
   background-color: #37dec8;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: poointer;
   transition: background-color 0.2s ease;
 }
@@ -541,7 +591,7 @@ PRICING ↓
   color: rgb(5, 5, 198);
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: poointer;
   transition: background-color 0.2s ease;
 }
@@ -551,7 +601,7 @@ PRICING ↓
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: poointer;
   transition: background-color 0.2s ease;
 }
