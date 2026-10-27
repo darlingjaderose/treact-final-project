@@ -1123,6 +1123,18 @@ footer {
   opacity: 0.5;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 48px;
+}
+
+.footer__row {
+  position: relative;
+  z-index: 2;
+}
+
 .row {
   width: 100%;
   max-width: 1280px;
